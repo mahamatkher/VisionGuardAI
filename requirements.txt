@@ -1,0 +1,32 @@
+# ==============================================================
+# VisionGuard AI - Requirements
+# Traffic Enforcement Platform
+# Optimized for: Ryzen 3 / 8GB RAM / No GPU
+# ==============================================================
+
+# ── Web Framework ──────────────────────────────────────────────
+Flask==3.0.3
+Flask-CORS==4.0.0
+
+# ── Computer Vision ────────────────────────────────────────────
+opencv-python==4.10.0.84        # Real-time video processing
+Pillow==10.4.0                   # Image utilities
+
+# ── AI / Object Detection ──────────────────────────────────────
+ultralytics==8.2.87              # YOLOv8 (use yolov8n - Nano, lightest model)
+# paddlepaddle==2.6.1            # PaddleOCR backend (enable in Phase 3)
+# paddleocr==2.7.3               # License plate OCR (enable in Phase 3)
+
+# ── Database ───────────────────────────────────────────────────
+# SQLite is built into Python - no install needed
+
+# ── Utilities ──────────────────────────────────────────────────
+python-dotenv==1.0.1             # Environment variable management
+numpy==1.26.4                    # Numerical operations (used by OpenCV & YOLO)
+Werkzeug==3.0.3                  # Flask dependency / file handling
+
+# ── Logging ────────────────────────────────────────────────────
+colorlog==6.8.2                  # Colored terminal logs for development
+
+# ── Development Tools (optional) ───────────────────────────────
+# flask-debugtoolbar==0.15.1     # Uncomment for debug toolbar in dev mode

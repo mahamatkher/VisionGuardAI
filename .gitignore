@@ -1,0 +1,58 @@
+# ==============================================================
+# VisionGuard AI — .gitignore
+# ==============================================================
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# ── Virtual environment ────────────────────────────────────────
+venv/
+env/
+.venv/
+.env/
+
+# ── Secrets / environment ──────────────────────────────────────
+.env
+# (keep .env.example — it is safe to commit)
+
+# ── Database ───────────────────────────────────────────────────
+data/db/*.db
+data/db/*.sqlite
+data/db/*.sqlite3
+
+# ── AI Models (large binary files) ────────────────────────────
+data/models/*.pt
+data/models/*.onnx
+data/models/*.engine
+
+# ── Logs ──────────────────────────────────────────────────────
+data/logs/*.log
+data/logs/*.log.*
+
+# ── Screenshots / captured frames ─────────────────────────────
+data/screenshots/*.jpg
+data/screenshots/*.jpeg
+data/screenshots/*.png
+
+# ── OS & editor ────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Testing ────────────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
